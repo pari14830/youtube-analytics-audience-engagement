@@ -1,7 +1,12 @@
 # 📺 YouTube Analytics & Audience Engagement in Germany
 
-**Ironhack Data Analytics, Module 1: Data Wrangling and Retrieval Project**
-**Team Nairobi:** Pariya & Zahid
+> **Summary:** We combined 200 current trending videos from the YouTube Data API (2026) with about 55,000 historical trending videos from Kaggle (2020–2024) to find what drives engagement in Germany. **Clickbait titles got 44% fewer median views**, and **Shorts had lower like-rates than longer videos (1.74% vs. 2.68%)**. None of the four hypotheses was supported, so common assumptions about YouTube don't hold in this data.
+
+`Python` `REST API` `pandas` `Data cleaning` `matplotlib` `seaborn`
+
+**Pair project:** Pariya & Zahid · September – October 2026
+
+**My part (Pariya):** collected the API data with pagination and cleaned it in Python (ISO 8601 durations, UTC to Berlin time, hidden likes kept as missing), and tested two hypotheses: video length (Shorts) and clickbait titles.
 
 ---
 
@@ -109,7 +114,7 @@ We measure engagement as a share of views:
 ```
 ├── 01_api_data.ipynb                   # API data: collection + cleaning (Pariya)
 ├── 02_kaggle_data.ipynb                # Kaggle data: cleaning (Zahid)
-├── 03_combine_eda.ipynb                # Combine both + EDA + conclusions
+├── 03_YouTube_Analytics_Combine_EDA.ipynb  # Combine both + EDA + conclusions
 ├── youtube_trending_de_api_raw.csv     # Raw API snapshot (200 videos)
 ├── api_clean.csv                       # Clean API data
 ├── kaggle_clean.csv                    # Clean Kaggle data
@@ -128,3 +133,9 @@ We measure engagement as a share of views:
 - 📋 [Trello board](https://trello.com/b/EJa24f1T/my-trello-board)
 - 📦 [Kaggle dataset](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset)
 - 🔌 [YouTube Data API v3 documentation](https://developers.google.com/youtube/v3)
+
+---
+
+**Authors:** Pariya Lakani ([GitHub](https://github.com/pari14830) · [LinkedIn](https://www.linkedin.com/in/lakani-dataanalyst)) & Zahid
+
+*Built during the Ironhack Data Analytics programme (Berlin).*
